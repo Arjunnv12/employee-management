@@ -2,6 +2,7 @@ package com.example.employee_management.controller;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.employee_management.model.Employee;
 import com.example.employee_management.service.EmployeeService;
 
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
